@@ -80,7 +80,7 @@ export class Travel {
 
         document.getElementById("distance").innerText = "Distance (Km):" + distance
         document.getElementById("duration").innerText = "Duration (minutes):" + this.travelDuration(durations)
-        document.getElementById("price").innerText = "precio (pesos):" + this.travelPrice(distance)
+        document.getElementById("price").innerText = "Precio (pesos):" + this.travelPrice(distance)
     }
 
 }
