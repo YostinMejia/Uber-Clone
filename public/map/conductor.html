@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uber-Clone</title>
+</head>
+<body>
+    <h1>Conductor</h1>
+    <div id="notificacion"></div>
+
+    <script>
+        setInterval(function() {
+            var mensaje = localStorage.getItem("mensajeParaConductor");
+            if (mensaje) {
+                document.getElementById("notificacion").innerText = mensaje;
+                localStorage.removeItem("mensajeParaConductor");
+            }
+        }, 1000);
+    </script>
+
+
+</body>
+</html>

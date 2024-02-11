@@ -9,7 +9,10 @@
         integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
     <link rel="stylesheet" href="usuario.css">
-
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
 
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
         integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
@@ -30,6 +33,26 @@
     <div id="text">
         <h1 id="Principal">Comienza a Viajar<br>con Uber</h1>
         <h3 id="Normal">Viaja en minutos</h3>
+
+        <button id="boton" onclick="mostrarAviso()">?</button>
+
+        <div class="aviso" id="aviso">
+            <span class="cerrar" onclick="cerrarAviso()">×</span>
+            <p>Si deseas ingresar una dirección exacta, usa la lupa que se encuentra en el mapa</p>
+        </div>
+    
+        <script src="warning.js"></script>
+
+        <button id="notificar">Notificar al Conductor</button>
+
+        <script>
+            document.getElementById("notificar").addEventListener("click", function() {
+                localStorage.setItem("mensajeParaConductor", "Tienes una nueva propuesta de viaje.");
+                
+            });
+        </script>
+
+        
     </div>
 
     <div id="information">
