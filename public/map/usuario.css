@@ -1,42 +1,32 @@
 #map {
-    height: 80vh; /* 100% de la altura del viewport */
-    width: 100vw; /* 100% del ancho del viewport */
-}
-
-#map {
     height: 70vh;
     width: 500px;
     border: 2px solid #333;
-    margin: 60px auto;
+    margin: -220px auto;
     margin-bottom: 90px;
     padding: 10px;
     background-color: #f0f0f0;
     position: relative;
     left: 350px ;
-    overflow-y: hidden;
 }
 
 #barra {
 
     height: 70px; 
     background-color: rgb(0, 0, 0);
-    position: fixed; /* Fija la posición del div */
-    top: 0; /* Lo coloca al inicio de la ventana del navegador */
-    left: 0; /* Lo coloca en el borde izquierdo de la ventana del navegador */
-    width: 100%; /* Ancho al 100% */
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    width: 100%; 
     padding: 5px;
     box-sizing: border-box;
-    overflow-y: hidden;
     box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.75);
 
 }
 
-body {
-    overflow-y: hidden; 
-}
 
 #barra img {
-    width: 90px; /* Ancho de la imagen */
+    width: 90px; 
     height: auto;
     position: relative;
     top: -10px;
@@ -47,25 +37,42 @@ body {
 
 #information {
     position: relative;
-    top: 120px;
+    top: 300px;
     left: 90px;
 
 }
 
 #barra ul {
-    list-style: none; /* Quita los puntos de la lista */
-    display: flex; /* Utiliza flexbox para colocar los elementos horizontalmente */
+    list-style: none; 
+    display: flex; 
 }
 
 #barra li {
-    margin-right: 50px; /* Espacio entre los elementos */
+    margin-right: 60px;
 }
 
+#text {
+    position: relative;
+    top: 250px;
+    left: 150px;
+}
 
-.enlace_ayuda {
-    text-decoration: none; /* Quita el subrayado del enlace */
+#Principal {
+    position: center;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 50px;
+
+}
+
+body{
+
+    overflow-y: hidden;
+}
+
+.enlace {
+    text-decoration: none; 
     color: white;
     position: relative;
-    top: 8px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    top: 9px;
+    font-family: 'Be Vietnam Pro', sans-serif;
 }
