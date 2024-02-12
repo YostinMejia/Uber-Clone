@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>map</title>
+    <link rel="stylesheet" href="main.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+</head>
+
+<body>
+    <div id="map"></div>
+
+    <ul id="travel-info">
+        <li id="recogida"></li>
+        <li id="llegada"></li>
+        <li id="distance"></li>
+        <li id="duration"></li>
+        <li id="price"></li>
+    </ul>
+
+    <button id="search"> buscar viaje</button>
+
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script type="module" src="index.js"></script>
+    <script type="module" src="socketio-cliente.js"> </script>
+</body>
+
+</html>
