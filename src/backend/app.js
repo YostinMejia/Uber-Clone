@@ -23,7 +23,7 @@ app.use("/conductor", driverRouter)
 app.use("/", clienteRouter)
 
 app.use("*", (req, res) => {
-    res.status(404).send("Rutan invalida")
+    res.status(404).send("Ruta invalida")
 })
 
 const port = process.env.PORT || 3000

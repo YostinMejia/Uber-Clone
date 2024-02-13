@@ -1,14 +1,16 @@
 #map {
     height: 70vh;
-    width: 500px;
+    width: 650px;
     border: 2px solid #333;
-    margin: -330px auto;
+    margin: -530px auto;
     margin-bottom: 90px;
     padding: 10px;
     background-color: #f0f0f0;
     position: relative;
     left: 350px ;
     overflow: hidden;
+    z-index: 1;
+    height: 650px;
 }
 
 #bar {
@@ -22,6 +24,7 @@
     padding: 5px;
     box-sizing: border-box;
     box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.75);
+    z-index: 2
 
 }
 
@@ -48,15 +51,53 @@ body{
 
 #travel_info {
     position: relative;
-    top: 300px;
-    left: 130px;
+    top: 110px;
+    left: 180px;
+    width: 50px;
     overflow: hidden;
-
+    background-color: #ffffff;
+    width: 500px;
+    margin-top: -25px;
+    padding: 10px; 
+    border-radius: 5px; 
+    font-family:'Be Vietnam Pro', sans-serif; 
 }
+
+.info_item {
+    margin-bottom: 10px; 
+    padding: 10px;
+    border: 1px solid #e5e5e5; 
+    border-radius: 80px; 
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    width: 400px;
+}
+
+.info_item p {
+    margin: 7px 0; 
+}
+
+.info_item span {
+    font-weight: bold;
+    color: #333;
+    margin-right: 10px; 
+}
+
+
+#travel_info p {
+    margin: 7px 0; 
+}
+
+#travel_info span {
+    font-weight: bold; 
+    color: #333; 
+    margin-right: 10px; 
+}
+
 
 #text {
     position: relative;
-    top: 250px;
+    top: 120px;
     left: 150px;
     overflow: hidden;
     
@@ -119,16 +160,45 @@ body{
 
 button {
     padding: 10px 20px;
-    font-size: 16px;
-    background-color: #007bff;
+    font-size: 13px;
+    background-color: #000000;
     color: #fff;
     border: none;
-    border-radius: 5px;
+    border-radius: 100px;
     cursor: pointer;
+    overflow: hidden;
+    text-align: center;
+    font-family:'Be Vietnam Pro', sans-serif ;
+    
+}
+
+#search{
+    padding: 10px 20px;
+    font-size: 19px;
+    position: relative;
+    top: 130px;
+    left: 350px;
+    font-family:'Be Vietnam Pro', sans-serif ;
+    
+}
+
+#showNotificationBtn { 
+    font-size: 15px; 
+    position: relative;
+    top: -250px;
+    left: 565px;
+    width: 20px;
+    height: 40px;
+    text-align: center;
+    font-family:'Be Vietnam Pro', sans-serif ;
+
+}
+
+
+
+button:hover {
+    background-color: #979797;
     overflow: hidden;
 }
 
-button:hover {
-    background-color: #0056b3;
-    overflow: hidden;
-}
+

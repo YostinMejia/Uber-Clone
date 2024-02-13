@@ -12,7 +12,9 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@500&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
         integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
     <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
@@ -35,7 +37,7 @@
 
         <div id="notification" class="notification">
           <span class="closebtn" onclick="closeNotification()">&times;</span>
-          <p>¡Esta es una notificación de ejemplo!</p>
+          <p>Instrucciones del mapa</p>
         </div>
 
         <script src="warning_file.js"></script>
@@ -44,15 +46,24 @@
     
 
     <div id="travel_info">
-        <ul>
-            <li id="recogida"></li>
-            <li id="llegada"></li>
-            <li id="distance"></li>
-            <li id="duration"></li>
-            <li id="price"></li>
-        </ul>
-
+        <div class="info_item">
+            <p><span>Punto de Partida:</span> <span id="recogida"></span></p>
+        </div>
+        <div class="info_item">
+            <p><span>Punto Destino:</span> <span id="llegada"></span></p>
+        </div>
+        <div class="info_item">
+            <p><span>Distancia:</span> <span id="distance"></span></p>
+        </div>
+        <div class="info_item">
+            <p><span>Duración:</span> <span id="duration"></span></p>
+        </div>
+        <div class="info_item">
+            <p><span>Precio:</span> <span id="price"></span></p>
+        </div>
     </div>
+    
+    
 
     <button id="search">BUSCAR</button>
 
