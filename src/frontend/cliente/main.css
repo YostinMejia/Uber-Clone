@@ -1,4 +1,134 @@
 #map {
-    height: 80vh; /* 100% de la altura del viewport */
-    width: 100vw; /* 100% del ancho del viewport */
+    height: 70vh;
+    width: 500px;
+    border: 2px solid #333;
+    margin: -330px auto;
+    margin-bottom: 90px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    position: relative;
+    left: 350px ;
+    overflow: hidden;
+}
+
+#bar {
+
+    height: 70px; 
+    background-color: rgb(0, 0, 0);
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    padding: 5px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.75);
+
+}
+
+body{
+    overflow-x: hidden;
+}
+#bar img {
+    width: 90px; 
+    height: auto;
+    position: relative;
+    top: -10px;
+    left: 20px;
+}
+
+#bar ul {
+    list-style: none; 
+    display: flex; 
+}
+
+#bar li {
+    margin-right: 60px;
+}
+
+
+#travel_info {
+    position: relative;
+    top: 300px;
+    left: 130px;
+    overflow: hidden;
+
+}
+
+#text {
+    position: relative;
+    top: 250px;
+    left: 150px;
+    overflow: hidden;
+    
+}
+
+#Principal {
+    position: center;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 55px;
+    overflow: hidden;
+
+}
+
+#Normal{
+    position: relative;
+    top: -25px;
+    font-family: 'Quicksand', sans-serif;
+    overflow: hidden;
+}
+
+
+
+.link{
+    text-decoration: none; 
+    color: white;
+    position: relative;
+    top: 9px;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+
+.notification {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    z-index: 1000;
+    text-align: center;
+}
+  
+.notification p {
+    margin: 0;
+}
+  
+.closebtn {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 12px 15px;
+    color: inherit;
+}
+  
+  
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+button:hover {
+    background-color: #0056b3;
+    overflow: hidden;
 }
