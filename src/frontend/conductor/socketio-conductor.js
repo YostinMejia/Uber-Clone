@@ -13,8 +13,7 @@ const socket = io()
 
 const travelUl = document.getElementById("travels")
 
-socket.on("search-driver", (travel) => {
-    console.log("driver");
+socket.on("search-driver", (travel, userSocketId) => {
     const ul = travelUl.getElementsByTagName("ul");
     const ulElements = ul.length;
 
@@ -55,10 +54,11 @@ socket.on("search-driver", (travel) => {
             markersList.push(markers.createMarker(point[0], point[1], map, travelRepository))
         });
 
-        console.log(travelRepository.routeLayer, "layer");
         await travelRepository.startTravel(markersList)
         map.traceRoute(travelRepository.routeLayer)
-
+        const conductorInfo = { nombre: "yostin", carro: "ferrari", placa: "ASD123" }
+        
+        socket.emit("travel-accepted", conductorInfo, userSocketId)
     })
 
     const denyBtn = document.createElement("button")

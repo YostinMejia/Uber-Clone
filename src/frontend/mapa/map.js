@@ -30,7 +30,6 @@ export class Map {
             if (this.markers.markersList.length >= 2) {
                 await this.travelRepository.startTravel(this.markers.markersList)
                 this.traceRoute(this.travelRepository.routeLayer)
-                console.log("no muestar ni jchiomba");
                 this.setTravelDataHtml(this.travelRepository.duration, this.travelRepository.distance, this.travelRepository.price)
             }
 
