@@ -42,9 +42,9 @@ export class Map {
     }
 
     setTravelDataHtml(duration, distance, price) {
-        document.getElementById("distance").innerText = "Distancia del Viaje (Km):" + distance
-        document.getElementById("duration").innerText = "Duración (minutos):" + duration
-        document.getElementById("price").innerText = "Precio Total (COP):" + price
+        document.getElementById("distance").innerText = "" + distance
+        document.getElementById("duration").innerText = "" + duration
+        document.getElementById("price").innerText = "" + price
     }
 
     traceRoute(routeLayer) {

@@ -1,16 +1,16 @@
 #map {
-    height: 70vh;
+    height: 80vh;
     width: 650px;
     border: 2px solid #333;
-    margin: -530px auto;
+    margin: -560px auto;
     margin-bottom: 90px;
     padding: 10px;
     background-color: #f0f0f0;
     position: relative;
-    left: 350px ;
+    left: 470px ;
     overflow: hidden;
     z-index: 1;
-    height: 650px;
+
 }
 
 #bar {
@@ -31,6 +31,7 @@
 body{
     overflow-x: hidden;
 }
+
 #bar img {
     width: 90px; 
     height: auto;
@@ -51,8 +52,8 @@ body{
 
 #travel_info {
     position: relative;
-    top: 110px;
-    left: 180px;
+    top: 120px;
+    left: 280px;
     width: 50px;
     overflow: hidden;
     background-color: #ffffff;
@@ -73,6 +74,8 @@ body{
     width: 400px;
 }
 
+
+
 .info_item p {
     margin: 7px 0; 
 }
@@ -80,7 +83,12 @@ body{
 .info_item span {
     font-weight: bold;
     color: #333;
-    margin-right: 10px; 
+    margin-right: 10px;
+    max-width:400px; 
+    overflow: hidden; 
+    white-space: nowrap; 
+    text-overflow: ellipsis;
+    display: inline-block;
 }
 
 
@@ -97,23 +105,26 @@ body{
 
 #text {
     position: relative;
-    top: 120px;
+    top: 170px;
     left: 150px;
     overflow: hidden;
     
 }
 
 #Principal {
-    position: center;
+    position: relative;
     font-family: 'Be Vietnam Pro', sans-serif;
     font-size: 55px;
+    top: -50px;
     overflow: hidden;
+    left: 150px;
 
 }
 
 #Normal{
     position: relative;
-    top: -25px;
+    top: -80px;
+    left: 150px;
     font-family: 'Quicksand', sans-serif;
     overflow: hidden;
 }
@@ -132,16 +143,29 @@ body{
 .notification {
     display: none;
     position: fixed;
-    top: 50%;
-    left: 50%;
+    top: 45%;
+    color: #000;
+    left: 36%;
     transform: translate(-50%, -50%);
     width: 300px;
-    background-color: #333;
-    color: white;
+    background-color: #afacac;
+    color: rgb(0, 0, 0);
     padding: 15px;
     z-index: 1000;
     text-align: center;
+    font-family: 'Be Vietnam Pro', sans-serif ;
+    animation: fadein 0.5s forwards, slidein 0.5s forwards;
 }
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes slidein {
+    from { transform: translateY(-100%); }
+    to { transform: translateY(0); }
+  }
   
 .notification p {
     margin: 0;
@@ -150,8 +174,8 @@ body{
 .closebtn {
     cursor: pointer;
     position: absolute;
-    top: 0;
-    right: 0;
+    top: -10px;
+    left: -5px;;
     padding: 12px 15px;
     color: inherit;
 }
@@ -176,8 +200,8 @@ button {
     padding: 10px 20px;
     font-size: 19px;
     position: relative;
-    top: 130px;
-    left: 350px;
+    top: 120px;
+    left: 430px;
     font-family:'Be Vietnam Pro', sans-serif ;
     
 }
@@ -185,15 +209,17 @@ button {
 #showNotificationBtn { 
     font-size: 15px; 
     position: relative;
-    top: -250px;
-    left: 565px;
-    width: 20px;
+    top: 120px;
+    left: 450px;
+    width: 50px;
     height: 40px;
     text-align: center;
+    background-color: transparent;
+    border: 1px solid #000;
+    color: #000;
     font-family:'Be Vietnam Pro', sans-serif ;
 
 }
-
 
 
 button:hover {
