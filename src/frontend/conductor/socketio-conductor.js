@@ -45,8 +45,9 @@ socket.on("search-driver", (travel) => {
 
 
     const aceptBtn = document.createElement("button");
+    aceptBtn.classList.add("acept-button");
     aceptBtn.setAttribute("id", `acept-${ulElements}`);
-    aceptBtn.textContent = "Aceptar";
+    aceptBtn.textContent = "ACEPTAR";
     aceptBtn.addEventListener("click", async (e) => {
         while (travelUl.firstChild) {
             travelUl.removeChild(travelUl.firstChild);
@@ -81,8 +82,9 @@ socket.on("search-driver", (travel) => {
 
 
     const denyBtn = document.createElement("button");
+    denyBtn.classList.add("deny-button");
     denyBtn.setAttribute("id", `deny-${ulElements}`);
-    denyBtn.textContent = "Rechazar";
+    denyBtn.textContent = "RECHAZAR";
     denyBtn.addEventListener("click", (e) => {
        
         info.remove();

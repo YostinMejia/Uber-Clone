@@ -112,18 +112,28 @@ body{
 }
 
 
-
-
 .travel-info button {
     margin-top: 10px; 
     position: relative;
-    left: 850px;
-    padding: 5px 10px; 
-    background-color: #007bff; 
+    left: 750px;
+    top: -200px;
+    width: 100px;
+    padding: 5px 10px;  
     color: #fff; 
     border: none; 
     border-radius: 5px; 
-    cursor: pointer; 
+    cursor: pointer;
+    font-family:'Be Vietnam Pro', sans-serif; 
+    height: 40px;
+}
+
+.acept-button {
+    background-color: #4CAF50;
+    margin-right: 10px;
+}
+
+.deny-button{
+    background-color:brown;
 }
 
 
