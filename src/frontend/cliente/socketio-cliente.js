@@ -6,7 +6,9 @@ export const search = (points, price, distance, duration, startAddress, endAddre
         distance: distance, duration: duration,
         startAddress: startAddress, endAddress: endAddress
     }
+
     socket.emit("search-travel", travel, socket.id)
+
 }
 
 

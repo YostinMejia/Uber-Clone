@@ -76,7 +76,7 @@ export class Travel {
         this.price = this.travelPrice(this.distance)
 
         this.routeLayer = L.geoJSON(routes[0].geometry, {
-            style: { color: "#ff7800", weight: 5, opacity: 0.6 }
+            style: { color: "#000000", weight: 5, opacity: 0.8 }
         })
 
     }

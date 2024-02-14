@@ -9,9 +9,12 @@ export function driverSocketioServer(io) {
             console.log("conductor desconectado", e);
         })
 
+
         socket.on("travel-accepted",(conductorInfo,userSocketId)=>{
-            socket.to(userSocketId).emit("travel-accepted", conductorInfo);
+            socket.to(userSocketId).emit("travel-accepted", conductorInfo)
         })
+
+
 
     })
 

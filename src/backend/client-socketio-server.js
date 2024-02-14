@@ -15,6 +15,7 @@ export function clientSocketioServer(io) {
 
             console.log("Usuario desconectado", e);
         })
+    
 
     })
 

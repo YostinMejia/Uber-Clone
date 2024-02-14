@@ -1,0 +1,138 @@
+#map {
+    height: 100vh;
+    width: 1000px;
+    border: 6px solid #000000;
+    margin: 120px auto;
+    margin-bottom: 90px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    position: relative;
+    left: 0% ;
+    overflow: hidden;
+    z-index: 1;
+    height: 650px;
+}
+
+#bar {
+
+    height: 70px; 
+    background-color: rgb(0, 0, 0);
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    padding: 5px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.75);
+    z-index: 2
+
+}
+
+body{
+    overflow-x: hidden;
+    background-color: rgb(255, 255, 255);
+}
+
+#bar img {
+    width: 90px; 
+    height: auto;
+    position: relative;
+    top: -10px;
+    left: 20px;
+}
+
+#bar ul {
+    list-style: none; 
+    display: flex; 
+}
+
+#bar li {
+    margin-right: 60px;
+}
+
+.link{
+    text-decoration: none; 
+    color: white;
+    position: relative;
+    top: 9px;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+.title-container {
+    background-color: rgb(0, 0, 0); 
+    width: 7000px; 
+    height: 100px; 
+    top: -40px;
+    position: relative;
+    right: 10px;
+    justify-content: center; 
+}
+
+#title {
+    text-decoration: none;
+    color: rgb(255, 255, 255); 
+    font-family: 'Be Vietnam Pro', sans-serif;
+    position: relative;
+    left: 550px;
+    top: 25px;
+}
+
+#subtitle{
+    font-family: 'Be Vietnam Pro', sans-serif;
+
+}
+
+.information_travel{
+    position: relative;
+    left: 300px;
+}
+
+.travel-info {
+    list-style: none; 
+    padding: 0; 
+    width: 700px;
+    margin-bottom: 10px; 
+    margin-left: 300px; 
+    margin-right: 0;  
+}
+
+.travel-info li {
+    padding: 10px;
+    margin-bottom: 10px; 
+    border: 1px solid #e5e5e5; 
+    border-radius: 10px; 
+    height: 30px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    overflow: hidden; 
+    white-space: nowrap; 
+    text-overflow: ellipsis;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: bold;
+}
+
+
+
+
+.travel-info button {
+    margin-top: 10px; 
+    position: relative;
+    left: 850px;
+    padding: 5px 10px; 
+    background-color: #007bff; 
+    color: #fff; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+}
+
+
+
+
+
+
+
+
+
+
+
