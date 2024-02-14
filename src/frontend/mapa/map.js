@@ -30,7 +30,6 @@ export class Map {
             if (this.markers.markersList.length >= 2) {
                 await this.travelRepository.startTravel(this.markers.markersList)
                 this.traceRoute(this.travelRepository.routeLayer)
-                console.log("no muestra");
                 this.setTravelDataHtml(this.travelRepository.duration, this.travelRepository.distance, this.travelRepository.price)
             }
 
@@ -42,9 +41,9 @@ export class Map {
     }
 
     setTravelDataHtml(duration, distance, price) {
-        document.getElementById("distance").innerText = "" + distance
-        document.getElementById("duration").innerText = "" + duration
-        document.getElementById("price").innerText = "" + price
+        document.getElementById("distance").innerText = "Distance (Km):" + distance
+        document.getElementById("duration").innerText = "Duration (minutes):" + duration
+        document.getElementById("price").innerText = "precio (pesos):" + price
     }
 
     traceRoute(routeLayer) {

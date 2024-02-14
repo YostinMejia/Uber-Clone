@@ -2,22 +2,18 @@ export function clientSocketioServer(io) {
 
     io.on("connection", (socket) => {
 
-        console.log("User connected", socket.id);
+        console.log("Usuario conectado", socket.id);
 
-        socket.on("search-travel", (travel) => {
+        socket.on("search-travel", (travel, userSocketId) => {
             //emitir el mensaje a todos los que esten en el room de conductores
-            io.to("drivers-availables").emit("search-driver", travel)
+            io.to("drivers-availables").emit("search-driver", travel, userSocketId)
             //Activar el notificador para que se trace el mapa con las rutas y demás
 
         })
 
-        socket.on("travel-accepted",(travel)=>{
-            console.log("aceptado jsiajdksd",travel);
-        })
-
         socket.on("disconnect", (e) => {
-            
-            console.log("USer disconnected", e);
+
+            console.log("Usuario desconectado", e);
         })
     
 
