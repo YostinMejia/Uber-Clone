@@ -112,6 +112,8 @@ body{
 }
 
 
+
+
 .travel-info button {
     margin-top: 10px; 
     position: relative;
@@ -133,8 +135,9 @@ body{
 }
 
 .deny-button{
-    background-color:brown;
+    background-color: brown;
 }
+
 
 
 

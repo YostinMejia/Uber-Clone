@@ -41,9 +41,9 @@ export class Map {
     }
 
     setTravelDataHtml(duration, distance, price) {
-        document.getElementById("distance").innerText = "Distance (Km):" + distance
-        document.getElementById("duration").innerText = "Duration (minutes):" + duration
-        document.getElementById("price").innerText = "precio (pesos):" + price
+        document.getElementById("distance").innerText = "" + distance
+        document.getElementById("duration").innerText = "" + duration
+        document.getElementById("price").innerText = "" + price
     }
 
     traceRoute(routeLayer) {
