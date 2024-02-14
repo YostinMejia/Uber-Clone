@@ -1,13 +1,13 @@
 #map {
     height: 100vh;
     width: 1000px;
-    border: 2px solid #000000;
+    border: 6px solid #000000;
     margin: 120px auto;
     margin-bottom: 90px;
     padding: 10px;
     background-color: #f0f0f0;
     position: relative;
-    left: 20px ;
+    left: 0% ;
     overflow: hidden;
     z-index: 1;
     height: 650px;
@@ -73,7 +73,7 @@ body{
     color: rgb(255, 255, 255); 
     font-family: 'Be Vietnam Pro', sans-serif;
     position: relative;
-    left: 560px;
+    left: 550px;
     top: 25px;
 }
 
@@ -82,24 +82,42 @@ body{
 
 }
 
+.information_travel{
+    position: relative;
+    left: 300px;
+}
 
 .travel-info {
     list-style: none; 
     padding: 0; 
+    width: 700px;
+    margin-bottom: 10px; 
+    margin-left: 300px; 
+    margin-right: 0;  
 }
-
 
 .travel-info li {
+    padding: 10px;
     margin-bottom: 10px; 
-    padding: 10px; 
-    background-color: #f0f0f0; /* Color de fondo */
-    border: 1px solid #ccc; /* Borde alrededor del elemento de lista */
-    border-radius: 5px; /* Borde redondeado */
+    border: 1px solid #e5e5e5; 
+    border-radius: 10px; 
+    height: 30px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    overflow: hidden; 
+    white-space: nowrap; 
+    text-overflow: ellipsis;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: bold;
 }
+
+
 
 
 .travel-info button {
     margin-top: 10px; 
+    position: relative;
+    left: 850px;
     padding: 5px 10px; 
     background-color: #007bff; 
     color: #fff; 
@@ -108,9 +126,7 @@ body{
     cursor: pointer; 
 }
 
-.travel-info button:hover {
-    background-color: #0056b3; 
-}
+
 
 
 
