@@ -77,6 +77,11 @@ body{
     top: 25px;
 }
 
+#subtitle{
+    font-family: 'Be Vietnam Pro', sans-serif;
+
+}
+
 
 .travel-info {
     list-style: none; 

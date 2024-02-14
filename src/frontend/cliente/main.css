@@ -1,13 +1,13 @@
 #map {
-    height: 80vh;
-    width: 650px;
-    border: 2px solid #333;
+    height: 90vh;
+    width: 700px;
+    border: 6px solid #000000;
     margin: -560px auto;
     margin-bottom: 90px;
     padding: 10px;
     background-color: #f0f0f0;
     position: relative;
-    left: 470px ;
+    left: 300px ;
     overflow: hidden;
     z-index: 1;
 
@@ -52,8 +52,8 @@ body{
 
 #travel_info {
     position: relative;
-    top: 120px;
-    left: 280px;
+    top: 135px;
+    left: 90px;
     width: 50px;
     overflow: hidden;
     background-color: #ffffff;
@@ -68,7 +68,7 @@ body{
     margin-bottom: 10px; 
     padding: 10px;
     border: 1px solid #e5e5e5; 
-    border-radius: 80px; 
+    border-radius: 10px; 
     background-color: #ffffff;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
     width: 400px;
@@ -106,7 +106,7 @@ body{
 #text {
     position: relative;
     top: 170px;
-    left: 150px;
+    left: 100px;
     overflow: hidden;
     
 }
@@ -117,14 +117,14 @@ body{
     font-size: 55px;
     top: -50px;
     overflow: hidden;
-    left: 150px;
+    left: 0px;
 
 }
 
 #Normal{
     position: relative;
     top: -80px;
-    left: 150px;
+    left: 5px;
     font-family: 'Quicksand', sans-serif;
     overflow: hidden;
 }
@@ -188,7 +188,7 @@ button {
     background-color: #000000;
     color: #fff;
     border: none;
-    border-radius: 100px;
+    border-radius: 10px;
     cursor: pointer;
     overflow: hidden;
     text-align: center;
@@ -200,8 +200,8 @@ button {
     padding: 10px 20px;
     font-size: 19px;
     position: relative;
-    top: 120px;
-    left: 430px;
+    top: 140px;
+    left: 235px;
     font-family:'Be Vietnam Pro', sans-serif ;
     
 }
@@ -209,8 +209,8 @@ button {
 #showNotificationBtn { 
     font-size: 15px; 
     position: relative;
-    top: 120px;
-    left: 450px;
+    top: 140px;
+    left: 255px;
     width: 50px;
     height: 40px;
     text-align: center;
