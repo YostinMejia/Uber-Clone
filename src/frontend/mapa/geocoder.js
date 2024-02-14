@@ -1,5 +1,3 @@
-//organizar este mierdero y pasar las direcciones al front
-
 export class Geocoder {
     constructor() {
         this.recogida = ""
