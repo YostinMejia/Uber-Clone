@@ -12,7 +12,7 @@ const socket = io();
 
 const travelUl = document.getElementById("travels");
 
-socket.on("search-driver", (travel) => {
+socket.on("search-driver", (travel, userSocketId) => {
     const ul = travelUl.getElementsByTagName("ul");
     const ulElements = ul.length;
 
@@ -32,9 +32,9 @@ socket.on("search-driver", (travel) => {
         endAddress: "Punto Destino"
     };
 
-    
 
-   
+
+
     keys.forEach(key => {
         if (key !== "points") {
             let tempLi = document.createElement("li");
@@ -43,7 +43,7 @@ socket.on("search-driver", (travel) => {
         }
     });
 
-    
+
 
 
     const aceptBtn = document.createElement("button");
@@ -71,27 +71,29 @@ socket.on("search-driver", (travel) => {
             }
         });
 
-        
+
         const markersList = [];
         travel.points.forEach(point => {
             markersList.push(markers.createMarker(point[0], point[1], map, travelRepository));
         });
         await travelRepository.startTravel(markersList);
         map.traceRoute(travelRepository.routeLayer);
-        
+        const conductorInfo = { nombre: "yostin", carro: "ferrari", placa: "ASD123" }
+
+        socket.emit("travel-accepted", conductorInfo, userSocketId)
     });
 
 
 
     const denyBtn = document.createElement("button");
     denyBtn.classList.add("deny-button");
-    denyBtn.setAttribute("id",` deny-${ulElements}`);
+    denyBtn.setAttribute("id", ` deny-${ulElements}`);
     denyBtn.textContent = "RECHAZAR";
     denyBtn.addEventListener("click", (e) => {
-       
+
         info.remove();
     });
-    
+
     info.appendChild(aceptBtn);
     info.appendChild(denyBtn);
 });

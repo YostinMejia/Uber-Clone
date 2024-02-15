@@ -7,7 +7,6 @@ export function clientSocketioServer(io) {
         socket.on("search-travel", (travel, userSocketId) => {
             //emitir el mensaje a todos los que esten en el room de conductores
             io.to("drivers-availables").emit("search-driver", travel, userSocketId)
-            //Activar el notificador para que se trace el mapa con las rutas y demás
 
         })
 
