@@ -41,6 +41,11 @@ export class Map {
     }
 
     setTravelDataHtml(duration, distance, price) {
+
+        duration = parseInt(duration);
+        distance = parseInt(distance);
+        price = parseInt(price);
+
         document.getElementById("distance").innerText = "" + distance
         document.getElementById("duration").innerText = "" + duration
         document.getElementById("price").innerText = "" + price

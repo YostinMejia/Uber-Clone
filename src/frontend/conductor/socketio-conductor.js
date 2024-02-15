@@ -26,11 +26,13 @@ socket.on("search-driver", (travel) => {
 
     const fieldNames = {
         price: "Precio Total(COP)",
-        distance: "Distancia(km)",
-        duration: "Duración",
+        distance: "Distancia (km)",
+        duration: "Duración (minutos)",
         startAddress: "Punto de Partida",
         endAddress: "Punto Destino"
     };
+
+    
 
    
     keys.forEach(key => {
